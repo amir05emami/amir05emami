@@ -1,10 +1,19 @@
-- 👋 Hi, I’m @amir05emami
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-amir05emami/amir05emami is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+def cal(a,str,b):
+    if str=="+":
+        return a+b
+    elif str=="-":
+        return a-b
+    elif str=="*":
+        return a*b
+    elif str=="/":
+        return a/b
+a=float(input("Enter first number: "))
+b=float(input("Enter second number: "))
+while 1:
+    if b==0:
+        print("Error,Enter Another Number")
+        b=float(input("Enter second number: ")) 
+    else: 
+        break
+c=str(input("1.+ 2.- 3.* 4./\n"))
+print(cal(a,c,b))
